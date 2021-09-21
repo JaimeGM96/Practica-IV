@@ -1,3 +1,3 @@
 # Practica-IV
 ## Descripción
-En esta práctica se creará una aplicación para registrar precios de distintas cooperativas agricolas cuya función será facilitar al agricultor comparar precios de frutas y verduras y así poder ir a la que más convenga.
+El problema a tratar es la dificultad que tienen los agricultores para saber cuál es el precio de compra de cada producto, frutas y verduras, en las diferentes cooperativas agricolas. Cada cooperativa establece diariamente un precio de cada producto que es la cantidad por kilo que pagará al agricultor. Actualmente si se desea conocer el precio debes acudir personalmente a cada una de ellas. El objetivo de la aplicación es comparar los precios que cada cooperativa pone a cada producto para que así el agricultor decida a donde ir a vender su recolecta. Con esta aplicación conseguiriamos ahorrar tiempo y dinero.
