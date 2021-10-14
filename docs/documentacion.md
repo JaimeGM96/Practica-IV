@@ -9,5 +9,5 @@ Si el agricultor desea vender varios productos diferentes, lo indicará en el si
 A continuación se describirán las historias de los usuarios que van a usar la aplicación.
 
 Habrá un usuario que será el agricultor que necesite consultar la información que le proporciona la aplicación. En el sistema, también estará el usuario cooperativa que será el que almacene la información referente a los productos:
-- HU1: Como agricultor, quiero saber a qué cooperativa me interesa más acudir a vender mi recolecta.
-- HU2: Como agricultor, si quiero vender más de un producto necesito saber cuál es la ruta más optima en la que sacaré el máximo beneficio.
+- [HU1](https://github.com/JaimeGM96/Practica-IV/issues/2): Como agricultor, quiero saber a qué cooperativa me interesa más acudir a vender mi recolecta.
+- [HU2](https://github.com/JaimeGM96/Practica-IV/issues/8): Como agricultor, si quiero vender más de un producto necesito saber cuál es la ruta más optima en la que sacaré el máximo beneficio.
