@@ -2,8 +2,8 @@
 En este fichero se incluirá documentación sobre el proyecto
 
 ## User journey
-El agricultor accederá al sistema antes de ir al campo a recoger el cultivo. En función del producto que vaya a recoger y del precio que tenga ese día en las diferentes cooperativas, se le mostrará cuales son las mejores opciones por lo que podrá elegir facilmente a donde dirigirse.
-Si el agricultor desea vender varios productos diferentes, lo indicará en el sistema y se le mostrará la ruta más optima.
+El agricultor accederá al sistema antes de ir al campo a recoger el cultivo. En función del producto que vaya a recoger y del precio que tenga ese día en las diferentes cooperativas, se le mostrará cuales son las mejores opciones por lo que podrá elegir fácilmente a donde dirigirse.
+Si el agricultor desea vender varios productos diferentes, lo indicará en el sistema y se le mostrará la ruta más óptima.
 
 ## Historias de usuario
 A continuación se describirán las historias de los usuarios que van a usar la aplicación.
