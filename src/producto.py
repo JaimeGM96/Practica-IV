@@ -51,7 +51,7 @@ class Producto:
     estaciones
         Vector de string con las estaciones en las que el producto está disponible
     '''
-    def getTemporadas(self):
+    def get_temporadas(self):
         estaciones = []
         for temporada in self.temporadas:
             estaciones.append(temporada.value)
@@ -66,5 +66,5 @@ class Producto:
     tipo.value
         Valor del enumerado tipo
     '''
-    def getTipo(self):
+    def get_tipo(self):
         return self.tipo.value
