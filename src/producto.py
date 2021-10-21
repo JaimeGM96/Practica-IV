@@ -36,12 +36,48 @@ class Producto:
         Tipo de producto
     '''
     def __init__(self, id, nombre, precio, temporadas, cooperativa, tipo):
-        self.id = id
-        self.nombre = nombre
-        self.precio = precio
-        self.temporadas = temporadas
-        self.cooperativa = cooperativa
-        self.tipo = tipo
+        self._id = id
+        self._nombre = nombre
+        self._precio = precio
+        self._temporadas = temporadas
+        self._cooperativa = cooperativa
+        self._tipo = tipo
+
+    '''
+    Getter de id
+
+    Returns
+    -------
+    nombre
+        id del producto
+    '''
+    @property
+    def id(self):
+        return self._id
+
+    '''
+    Getter de nombre
+
+    Returns
+    -------
+    nombre
+        Nombre del producto
+    '''
+    @property
+    def nombre(self):
+        return self._nombre
+
+    '''
+    Getter de precio
+
+    Returns
+    -------
+    precio
+        Precio del producto
+    '''
+    @property
+    def precio(self):
+        return self._precio
 
     '''
     Getter de temporadas
@@ -51,12 +87,25 @@ class Producto:
     estaciones
         Vector de string con las estaciones en las que el producto está disponible
     '''
-    def get_temporadas(self):
+    @property
+    def temporadas(self):
         estaciones = []
-        for temporada in self.temporadas:
+        for temporada in self._temporadas:
             estaciones.append(temporada.value)
         
         return estaciones
+
+    '''
+    Getter de cooperativa
+
+    Returns
+    -------
+    cooperativa
+        Nombre de la cooperativa
+    '''
+    @property
+    def cooperativa(self):
+        return self._cooperativa
 
     '''
     Getter de tipo
@@ -66,5 +115,6 @@ class Producto:
     tipo.value
         Valor del enumerado tipo
     '''
-    def get_tipo(self):
-        return self.tipo.value
+    @property
+    def tipo(self):
+        return self._tipo.value
