@@ -10,12 +10,6 @@ class Temporada(Enum):
     OTONO = "otono"
     INVIERNO = "invierno"
 
-class Tipo(Enum):
-    FRUTA = "fruta"
-    VERDURA = "verdura"
-    LEGUMBRE = "legumbre"
-    CEREAL = "cereal"
-
 class Producto:
     '''
     Constructor del objeto Producto
@@ -32,16 +26,13 @@ class Producto:
         Estaciones en las cuales está disponible el producto
     cooperativa : cadena de caracteres
         Cooperativa a la cual pertenece el producto
-    tipo : enum de Tipo
-        Tipo de producto
     '''
-    def __init__(self, id, nombre, precio, temporadas, cooperativa, tipo):
+    def __init__(self, id, nombre, precio, temporadas, cooperativa):
         self._id = id
         self._nombre = nombre
         self._precio = precio
         self._temporadas = temporadas
         self._cooperativa = cooperativa
-        self._tipo = tipo
 
     '''
     Getter de id
@@ -106,15 +97,3 @@ class Producto:
     @property
     def cooperativa(self):
         return self._cooperativa
-
-    '''
-    Getter de tipo
-    
-    Returns
-    -------
-    tipo.value
-        Valor del enumerado tipo
-    '''
-    @property
-    def tipo(self):
-        return self._tipo.value
