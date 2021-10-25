@@ -2,14 +2,6 @@
 # Estructura de datos para almacenar los productos con los que tratará la aplicación
 #-----------------------------------------------------------------------------------
 
-from enum import Enum
-
-class Temporada(Enum):
-    PRIMAVERA = "primavera"
-    VERANO = "verano"
-    OTONO = "otono"
-    INVIERNO = "invierno"
-
 class Producto:
     '''
     Constructor del objeto Producto
@@ -22,16 +14,13 @@ class Producto:
         Nombre del producto
     precio : entero de coma flotante
         Precio por kilo del producto
-    temporadas : vector de Temporada
-        Estaciones en las cuales está disponible el producto
     cooperativa : cadena de caracteres
         Cooperativa a la cual pertenece el producto
     '''
-    def __init__(self, id, nombre, precio, temporadas, cooperativa):
+    def __init__(self, id, nombre, precio, cooperativa):
         self._id = id
         self._nombre = nombre
         self._precio = precio
-        self._temporadas = temporadas
         self._cooperativa = cooperativa
 
     '''
@@ -69,22 +58,6 @@ class Producto:
     @property
     def precio(self):
         return self._precio
-
-    '''
-    Getter de temporadas
-
-    Returns
-    -------
-    estaciones
-        Vector de string con las estaciones en las que el producto está disponible
-    '''
-    @property
-    def temporadas(self):
-        estaciones = []
-        for temporada in self._temporadas:
-            estaciones.append(temporada.value)
-        
-        return estaciones
 
     '''
     Getter de cooperativa
