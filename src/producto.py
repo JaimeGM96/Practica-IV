@@ -2,6 +2,8 @@
 # Estructura de datos para almacenar los productos con los que tratará la aplicación
 #-----------------------------------------------------------------------------------
 
+from precio import *
+
 class Producto:
     '''
     Constructor del objeto Producto
@@ -12,23 +14,21 @@ class Producto:
         Identificador único del producto
     nombre : cadena de caracteres
         Nombre del producto
-    precio : entero de coma flotante
+    precio : objeto tipo precio
         Precio por kilo del producto
-    cooperativa : cadena de caracteres
-        Cooperativa a la cual pertenece el producto
+        Fecha en la que se da ese precio
     '''
-    def __init__(self, id, nombre, precio, cooperativa):
+    def __init__(self, id, nombre, valor):
         self._id = id
         self._nombre = nombre
-        self._precio = precio
-        self._cooperativa = cooperativa
+        self._precio = Precio(valor)
 
     '''
     Getter de id
 
     Returns
     -------
-    nombre
+    id
         id del producto
     '''
     @property
@@ -57,16 +57,16 @@ class Producto:
     '''
     @property
     def precio(self):
-        return self._precio
-
+        return self._precio.valor
+    
     '''
-    Getter de cooperativa
+    Getter de fecha
 
     Returns
     -------
-    cooperativa
-        Nombre de la cooperativa
+    fecha
+        Fecha del precio del producto
     '''
     @property
-    def cooperativa(self):
-        return self._cooperativa
+    def fecha(self):
+        return self._precio.fecha
