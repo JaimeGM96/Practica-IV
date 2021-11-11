@@ -4,5 +4,6 @@ El problema a tratar es la dificultad que tienen los agricultores para saber cu�
 
 Además de esto, si el agricultor decide vender más de un producto a la vez, se creará la ruta óptima la cuál indicará a qué cooperativas tiene que ir y en cual vender cada producto.
 ## Documentación
-Para consultar la documentación del proyecto, pulse en este [enlace](docs/documentacion.md)
-Para consultar la justificación de elección del lenguaje, pulse en este [enlace](docs/lenguaje.md)
+- Para consultar la documentación del proyecto, pulse en este [enlace](docs/documentacion.md).
+- Para consultar la justificación de elección del lenguaje, pulse en este [enlace](docs/lenguaje.md).
+- Para consultar la elección del gestor de tareas, pulse en este [enlace](docs/gestor_tareas.md).
