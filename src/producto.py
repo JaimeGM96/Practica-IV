@@ -1,72 +1,71 @@
-#-----------------------------------------------------------------------------------
-# Estructura de datos para almacenar los productos con los que tratará la aplicación
-#-----------------------------------------------------------------------------------
+"""
+Estructura de datos para almacenar los productos con los que tratará la aplicación
+"""
 
-from precio import *
+from precio import Precio
 
 class Producto:
-    '''
-    Constructor del objeto Producto
+    """
+    Clase Producto
+    """
+    def __init__(self, iden, nombre, valor):
+        """
+        Constructor del objeto Producto
 
-    Parameters
-    ----------
-    id : entero
-        Identificador único del producto
-    nombre : cadena de caracteres
-        Nombre del producto
-    precio : objeto tipo precio
-        Precio por kilo del producto
-        Fecha en la que se da ese precio
-    '''
-    def __init__(self, id, nombre, valor):
-        self._id = id
+        Parameters:
+            iden: entero
+                Identificador único del producto
+            nombre: cadena de caracteres
+                Nombre del producto
+            precio: objeto tipo precio
+                Precio por kilo del producto
+                Fecha en la que se da ese precio
+        """
+        self._iden = iden
         self._nombre = nombre
         self._precio = Precio(valor)
 
-    '''
-    Getter de id
-
-    Returns
-    -------
-    id
-        id del producto
-    '''
     @property
-    def id(self):
-        return self._id
+    def iden(self):
+        """
+        Getter de id
 
-    '''
-    Getter de nombre
+        Returns:
+            iden: entero
+                Identificador único del producto
+        """
+        return self._iden
 
-    Returns
-    -------
-    nombre
-        Nombre del producto
-    '''
     @property
     def nombre(self):
+        """
+        Getter de nombre
+
+        Returns:
+            nombre: cadena de caracteres
+                Nombre del producto
+        """
         return self._nombre
 
-    '''
-    Getter de precio
-
-    Returns
-    -------
-    precio
-        Precio del producto
-    '''
     @property
     def precio(self):
-        return self._precio.valor
-    
-    '''
-    Getter de fecha
+        """
+        Getter de precio
 
-    Returns
-    -------
-    fecha
-        Fecha del precio del producto
-    '''
+        Returns:
+            precio: punto flotante
+                Precio del producto
+        """
+        return self._precio.valor
+
     @property
     def fecha(self):
+        """
+        Getter de fecha
+
+        Returns:
+            fecha: datetime
+                Fecha del precio del producto
+        """
         return self._precio.fecha
+        
