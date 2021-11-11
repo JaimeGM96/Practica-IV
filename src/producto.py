@@ -8,12 +8,12 @@ class Producto:
     """
     Clase Producto
     """
-    def __init__(self, iden, nombre, valor):
+    def __init__(self, id_prod, nombre, valor):
         """
         Constructor del objeto Producto
 
         Parameters:
-            iden: entero
+            id_prod: entero
                 Identificador único del producto
             nombre: cadena de caracteres
                 Nombre del producto
@@ -21,20 +21,20 @@ class Producto:
                 Precio por kilo del producto
                 Fecha en la que se da ese precio
         """
-        self._iden = iden
+        self._id_prod = id_prod
         self._nombre = nombre
         self._precio = Precio(valor)
 
     @property
-    def iden(self):
+    def id_prod(self):
         """
-        Getter de id
+        Getter de id_prod
 
         Returns:
-            iden: entero
+            id_prod: entero
                 Identificador único del producto
         """
-        return self._iden
+        return self._id_prod
 
     @property
     def nombre(self):
