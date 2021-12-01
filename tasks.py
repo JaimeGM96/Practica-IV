@@ -24,4 +24,4 @@ def check(c):
     """
     Tarea encargada de comprobar la sintaxis de los ficheros de la aplicación.
     """
-    c.run("pylint src")
+    c.run("pyflakes src")

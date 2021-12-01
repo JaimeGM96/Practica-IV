@@ -1,1 +1,1 @@
-pylint==2.11
+pyflakes==2.4
