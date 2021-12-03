@@ -1,13 +1,8 @@
 # Gestor de tareas
-Para el proyecto se necesitará un gestor de tareas que se usará para automatizar la ejecución de tests y el despliegue.
+## Introducción
+Es importante que ejecutemos test en nuestra aplicación para comprobar que el código funciona correctamente. Además de ejecutarlos, necesitaremos automatizarlos. Para ello se han tenido en cuenta varias herramientas que se encargan de esta función. Invoke y pypyr.
 
-Se han considerado las herramientas Invoke y Poetry.
+## Elección del gestor de tareas
+Ambos son gestores de tareas que se utilizan, por ejemplo, para la automatización de test que es lo que vamos a necesitar. Invoke nos proporciona una API de alto nivel que nos permite definir y organizar tareas desde un archivo task.py. Por otro lado, pypyr nos permite automatizar tareas a través de un archivo yaml.
 
-Invoke es un gestor de tareas que puede llevar a cabo funciones de gestión de dependecias. Se utiliza para la automatización de la construcción de proyectos además de poder realizar otras tareas como la automatización de test.
-
-Por otro lado, Poetry es un gestor de dependencias y empaquetador de librerías. Es simple pero limitado para la gestión de tareas.
-
-## Invoke
-Como gestor de tareas he elegido invoke.
-
-Es sencillo e intuitivo además de lo anteriormente comentado y se ajusta mejor a las necesidades del proyecto.
+Finalmente he elegido invoke ya que me parece simple e intuitivo a la vez que más sencillo que pypyr al tener que implementar solo las funciones que necesitemos en el archivo task.py además de cubrir todas las necesidades del proyecto.
