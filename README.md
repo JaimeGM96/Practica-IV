@@ -45,3 +45,4 @@ invoke check
 - Para consultar la documentación del proyecto, pulse en este [enlace](docs/documentacion.md).
 - Para consultar la justificación de elección del lenguaje, pulse en este [enlace](docs/lenguaje.md).
 - Para consultar la elección del gestor de tareas, pulse en este [enlace](docs/gestor_tareas.md).
+- Para consultar la elección del gestor de dependencias, pulse en este [enlace](docs/gestor_dependencias.md).
