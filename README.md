@@ -14,31 +14,34 @@ git clone https://github.com/JaimeGM96/Practica-IV.git
 Una vez descargado, iremos a la carpeta del proyecto, abriremos una terminal y ejecutaremos el comando:
 
 ```shell
-pip install invoke
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-Cuando tengamos invoke, pasaremos a instalar las dependencias con el comando:
+con esto instalaremos Poetry. Podemos instalarlo usando pip, pero de esta manera, nos puede dar problemas de conflictos de dependencias.
+Para comprobar que se ha instalado correctamente, ejecutaremos el comando
 
 ```shell
-invoke install
+poetry --version
 ```
 
-y si queremos instalar también las dependencias de desarrollo, ejecutaremos:
-
-```shell 
-invoke install --dev
-```
-
-En cuanto a la ejecución de los test, usaremos:
+Una vez instalado, podremos añadir dependencias de manera muy simple. En nuestro caso necesitamos instalar Poethepoet y lo agregaremos de esta forma:
 
 ```shell
-invoke test
+poetry add --dev poethepoet
 ```
 
-Para la comprobación de la sintaxis del código, usaremos:
+con esto lo añadiremos a las dependencias de desarrollo de nuestro repositorio.
+Por último nos queda instalar todas las dependencias
 
 ```shell
-invoke check
+poe installdeps
+```
+
+de esta forma, todas las dependencias que aparecen en el archivo pyproject.toml se instalarán.
+Para comprobar que el código compila usaremos el comando
+
+```shell
+poe check
 ```
 
 ## Documentación
