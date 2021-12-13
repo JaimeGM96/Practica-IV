@@ -17,14 +17,13 @@ Una vez descargado, iremos a la carpeta del proyecto, abriremos una terminal y e
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
 
-con esto instalaremos Poetry. Podemos instalarlo usando pip, pero de esta manera, nos puede dar problemas de conflictos de dependencias.
-Para comprobar que se ha instalado correctamente, ejecutaremos el comando
+con esto instalaremos Poetry. Para comprobar que se ha instalado correctamente, ejecutaremos el comando
 
 ```shell
 poetry --version
 ```
 
-Una vez instalado, podremos añadir dependencias de manera muy simple. En nuestro caso necesitamos instalar Poethepoet y lo agregaremos de esta forma:
+Una vez instalado, podremos añadir dependencias de manera muy simple. En nuestro caso necesitamos añadir Poethepoet y lo agregaremos de esta forma:
 
 ```shell
 poetry add --dev poethepoet
