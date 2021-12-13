@@ -1,59 +1,56 @@
-#---------------------------------------------------------------------------------
-# Estructura de datos para almacenar las cooperativas registradas en la aplicación
-#---------------------------------------------------------------------------------
-
-from producto import *
+"""
+Estructura de datos para almacenar las cooperativas registradas en la aplicación
+"""
 
 class Cooperativa:
-    '''
-    Constructor del objeto Cooperativa
+    """
+    Clase Cooperativa
+    """
+    def __init__(self, id_coop, nombre):
+        """
+        Constructor del objeto Cooperativa
 
-    Parameters
-    ----------
-    id : entero
-        Identificador único de la cooperativa
-    nombre : cadena de caracteres
-        Nombre de la cooperativa
-    productos : lista de productos
-        Lista donde se almacenan los productos de la cooperativa
-    '''
-    def __init__(self, id, nombre):
-        self._id = id
+        Parameters:
+            id_coop: entero
+                Identificador único de la cooperativa
+            nombre: cadena de caracteres
+                Nombre de la cooperativa
+            productos: lista de productos
+                Lista donde se almacenan los productos de la cooperativa
+        """
+        self._id_coop = id_coop
         self._nombre = nombre
         self._productos = list()
 
-    '''
-    Getter de id
-
-    Returns
-    -------
-    id
-        id de la cooperativa
-    '''
     @property
-    def id(self):
-        return self._id
+    def id_coop(self):
+        """
+        Getter de id_coop
 
-    '''
-    Getter de nombre
+        Returns:
+            id_coop: entero
+                Identificador único de la cooperativa
+        """
+        return self._id_coop
 
-    Returns
-    -------
-    nombre
-        Nombre de la cooperativa
-    '''
     @property
     def nombre(self):
-        return self._nombre
-    
-    '''
-    Getter de productos
+        """
+        Getter de nombre
 
-    Returns
-    -------
-    productos
-        Productos de la cooperativa
-    '''
+        Returns:
+            nombre: cadena de caracteres
+                Nombre de la cooperativa
+        """
+        return self._nombre
+
     @property
     def productos(self):
+        """
+        Getter de productos
+
+        Returns:
+            productos: lista de productos
+                Productos de la cooperativa
+        """
         return self._productos

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "practica-iv"
+version = "0.1.0"
+description = "Búsqueda de recorrido óptimo para agricultores"
+authors = ["Jaime Gallardo Mateo <jaimegallardo@correo.ugr.es>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+DateTime = "^4.3"
+
+[tool.poetry.dev-dependencies]
+poethepoet = "^0.11.0"
+
+[tool.poe.tasks]
+installdeps = "poetry install"
+check = "py3compile src"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
