@@ -2,6 +2,8 @@
 Estructura de datos para almacenar las cooperativas registradas en la aplicación
 """
 
+from agricultor import Agricultor
+
 class Cooperativa:
     """
     Clase Cooperativa
@@ -17,10 +19,13 @@ class Cooperativa:
                 Nombre de la cooperativa
             productos: lista de productos
                 Lista donde se almacenan los productos de la cooperativa
+            agricultores: lista de agricultores
+                Lista donde se almacenan los agricultores que son socios de la cooperativa
         """
         self._id_coop = id_coop
         self._nombre = nombre
         self._productos = list()
+        self._agricultores = list()
 
     @property
     def id_coop(self):
@@ -54,3 +59,14 @@ class Cooperativa:
                 Productos de la cooperativa
         """
         return self._productos
+
+    @property
+    def agricultores(self):
+        """
+        Getter de agricultores
+
+        Returns:
+            agricultores: lista de agricultores
+                Agricultores que son socios de la cooperativa
+        """
+        return self._agricultores
