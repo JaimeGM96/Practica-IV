@@ -8,18 +8,32 @@ class Agricultor:
     """
     Clase Agricultor
     """
-    def __init__(self, nombre):
+    def __init__(self, id_agri, nombre):
         """
         Constructor del objeto Agricultor
 
         Parameters:
+            id_agri: entero
+                Identificador único del agricultor
             nombre: cadena de caracteres
                 Nombre del agricultor
-            cooperativas: lista de cooperativas
-                Lista donde se almacenan las cooperativas a las que pertenece el agricultor
+            cooperativas: lista de identificadores de cooperativas
+                Lista donde se almacenan los ids de las cooperativas a las que pertenece el agricultor
         """
+        self._id_agri = id_agri
         self._nombre = nombre
         self._cooperativas = list()
+
+    @property
+    def id_agri(self):
+        """
+        Getter de id_agri
+
+        Returns:
+            id_agri: entero
+                Identificador único del agricultor
+        """
+        return self.id_agri
 
     @property
     def nombre(self):
@@ -38,7 +52,7 @@ class Agricultor:
         Getter de cooperativas
 
         Returns:
-            cooperativas: lista de cooperativas
-                Lista donde se almacenan las cooperativas a las que pertenece el agricultor
+            cooperativas: lista de enteros
+                Lista donde se almacenan los ids de las cooperativas a las que pertenece el agricultor
         """
         return self._cooperativas

@@ -19,8 +19,8 @@ class Cooperativa:
                 Nombre de la cooperativa
             productos: lista de productos
                 Lista donde se almacenan los productos de la cooperativa
-            agricultores: lista de agricultores
-                Lista donde se almacenan los agricultores que son socios de la cooperativa
+            agricultores: lista de enteros
+                Lista donde se almacenan los ids de los agricultores que son socios de la cooperativa
         """
         self._id_coop = id_coop
         self._nombre = nombre
@@ -66,7 +66,7 @@ class Cooperativa:
         Getter de agricultores
 
         Returns:
-            agricultores: lista de agricultores
-                Agricultores que son socios de la cooperativa
+            agricultores: lista de enteros
+                IDs de los agricultores que son socios de la cooperativa
         """
         return self._agricultores
