@@ -17,8 +17,8 @@ class Agricultor:
                 Identificador único del agricultor
             nombre: cadena de caracteres
                 Nombre del agricultor
-            cooperativas: lista de identificadores de cooperativas
-                Lista donde se almacenan los ids de las cooperativas a las que pertenece el agricultor
+            cooperativas: lista de enteros
+                Lista donde se almacenan los IDs de las cooperativas a las que pertenece el agricultor
         """
         self._id_agri = id_agri
         self._nombre = nombre
@@ -33,7 +33,7 @@ class Agricultor:
             id_agri: entero
                 Identificador único del agricultor
         """
-        return self.id_agri
+        return self._id_agri
 
     @property
     def nombre(self):
@@ -53,6 +53,6 @@ class Agricultor:
 
         Returns:
             cooperativas: lista de enteros
-                Lista donde se almacenan los ids de las cooperativas a las que pertenece el agricultor
+                Lista donde se almacenan los IDs de las cooperativas a las que pertenece el agricultor
         """
         return self._cooperativas
