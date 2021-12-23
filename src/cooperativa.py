@@ -2,6 +2,8 @@
 Estructura de datos para almacenar las cooperativas registradas en la aplicación
 """
 
+from agricultor import Agricultor
+
 class Cooperativa:
     """
     Clase Cooperativa

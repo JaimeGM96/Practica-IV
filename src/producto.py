@@ -53,19 +53,9 @@ class Producto:
         Getter de precio
 
         Returns:
-            precio: punto flotante
+            Precio: objeto precio
                 Precio del producto
+                Fecha de vigencia del precio del producto
         """
-        return self._precio.valor
-
-    @property
-    def fecha(self):
-        """
-        Getter de fecha
-
-        Returns:
-            fecha: datetime
-                Fecha del precio del producto
-        """
-        return self._precio.fecha
+        return self._precio
         
